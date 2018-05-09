@@ -1,0 +1,37 @@
+classes:
+- system.cassandra.backup.client.single
+parameters:
+  _param:
+    root_private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEpAIBAAKCAQEA0ge5nLvDPiOh/MCrEiIcw61j1kipmdh/fcR5EGAK6YpCKPbV
+      +6h86v5NoZjcMeSeHVueOOUdXxYHDWq27PPW3yF3vHHDjpaRw0iiXC4iSfiusoNe
+      Ho65ZiANmoNg4n8u9lgBAOAqL+5pIaTWpUOBk6apBYwwwqVHMGYvXPXdAwxDnN0K
+      S6nEbN2F/OfQKuDhsPbKnCiKUOATZjvaeFtwsNBR3YYOGtLlMftOAwphjhz4yxQB
+      MQjWHap5cD97Ny+zRTWiKLYGP9UAV/0+tgwaAYl8B1S84HlA6drsVzYJ1gN4CLCO
+      DuOlZRnfniffilLqTXgGez1SUREa0m8FxhCEKwIDAQABAoIBADh8r2UB8r7Roo1x
+      3BCicA4IoiNNo5+m5JMUtmK7EfRBpQ2TZXWrmP0yq/pcPEyG6ieHLoSqyj16lSb8
+      nnoYEqAsRiG+jxPYVxeof1I/biVq5sFIJ5YcWKyozj/SOcpw3laO0KZFo9MEUe4k
+      gT4ta7okRq0hSTPwc7cGpJJh5bEdq/Nvo4B+wpmfaR9pKfEXVf86G2v7uQbGDKR1
+      okAY8UFl08dOMZL/OeGrrpcCGVPv7yNugufCx5SMXp0UDxrBrv7ZlT+x/9a+y+F4
+      2Eo7MH2tRK/S4RtgXQpTW1igUgfOFEy/dScr9XTIC4tfPQl3cr8BplX+ty/dV72P
+      L1shVtECgYEA//AIs4RsLD4jJLaiG1iu2cG7qBqaqlycakTGsmE5mKZgpK59jopr
+      yv5hn282qfrslYsqGQ6XSQw60QHbUZ3rjdM41yT8Pl0SIBXIdV4W7XKVrktK37zQ
+      vgA3gVf1dv2l9Sq0fyb4bxCDg1LAHxbviRNlWt6y64DF95w6qhua7pcCgYEA0hTT
+      xgBJfPzwiy3H2cukHaALbbXEEE/WRj5xi1ns3qilG5QmUVxHbWHLAGy36cxlLmuq
+      QfneOqswHPNka9hntGH5P2ucvVSewqAx6gk3VbxjDVziMyWN1tnyWJwlM2ux88PB
+      /iLXTiOXMrw+0TOBLhEUmNoFHLuaiA2j3CtsHY0CgYAQaulj+p6lx+ahOEX10x6E
+      QXU0N2CshPxTpM3KK4pyTFnutnK/bgm0H9VLUOsExF/gx+iPauwxd2NefOwAtEyj
+      8GS5CFpV9cpv3HXbcYmu+aa4Y4QODiKlzYXB+k54r5SxwWeKsIlHNpv5FJnWZLZA
+      6MmbpqV7jeslExSATP0HSQKBgQDJxck01he/HS1nb7wQWj+xWINBhx/dzuBtrRHf
+      FqqjnHSgDWXUJP5Rd2jDaqglvPO9ZxkqrvObg8n9NGPSFRJdtO/w0snDKqAlLDlk
+      oB9ukDbOodR77WjS35edNbOhNKHBD9al4Q7L9PEGgLkQsxgyh6Mxv8zDMQiV/gvQ
+      rj/0DQKBgQDZeV+l8WIaOn+Jt1+ce99ptNTSWx3XEU/f7ytmAszxBR5q/vCuA5y7
+      Oc9nkali67rbX6TcRmdIX0DsyGaOhAkOOZLK3KrJQVIjQ0nw+yWammRpBreoXycC
+      g/1jckxN1HtKWMgQJW5rYGtfei4c0d8k/5886vnINKGvxwUuen2Z4A==
+      -----END RSA PRIVATE KEY-----
+  cassandra:
+    backup:
+      client:
+        target:
+          backup_dir: /srv/volumes/backup/cassandra

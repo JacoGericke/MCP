@@ -1,0 +1,15 @@
+classes:
+- system.backupninja.server.single
+- system.xtrabackup.server.single
+- system.glusterfs.client.cluster
+- system.glusterfs.client.volume.backup
+parameters:
+  _param:
+    backupninja_public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSB7mcu8M+I6H8wKsSIhzDrWPWSKmZ2H99xHkQYArpikIo9tX7qHzq/k2hmNwx5J4dW5445R1fFgcNarbs89bfIXe8ccOOlpHDSKJcLiJJ+K6yg14ejrlmIA2ag2Dify72WAEA4Cov7mkhpNalQ4GTpqkFjDDCpUcwZi9c9d0DDEOc3QpLqcRs3YX859Aq4OGw9sqcKIpQ4BNmO9p4W3Cw0FHdhg4a0uUx+04DCmGOHPjLFAExCNYdqnlwP3s3L7NFNaIotgY/1QBX/T62DBoBiXwHVLzgeUDp2uxXNgnWA3gIsI4O46VlGd+eJ9+KUupNeAZ7PVJRERrSbwXGEIQr
+    xtrabackup_public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSB7mcu8M+I6H8wKsSIhzDrWPWSKmZ2H99xHkQYArpikIo9tX7qHzq/k2hmNwx5J4dW5445R1fFgcNarbs89bfIXe8ccOOlpHDSKJcLiJJ+K6yg14ejrlmIA2ag2Dify72WAEA4Cov7mkhpNalQ4GTpqkFjDDCpUcwZi9c9d0DDEOc3QpLqcRs3YX859Aq4OGw9sqcKIpQ4BNmO9p4W3Cw0FHdhg4a0uUx+04DCmGOHPjLFAExCNYdqnlwP3s3L7NFNaIotgY/1QBX/T62DBoBiXwHVLzgeUDp2uxXNgnWA3gIsI4O46VlGd+eJ9+KUupNeAZ7PVJRERrSbwXGEIQr
+  backupninja:
+    server:
+      home_dir: /srv/volumes/backup/backupninja
+  xtrabackup:
+    server:
+      backup_dir: /srv/volumes/backup/xtrabackup

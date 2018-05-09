@@ -1,0 +1,5 @@
+classes:
+  - system.docker.swarm.manager
+  - cluster.netronome.infra
+  - cluster.netronome.cicd.control
+
